@@ -1,24 +1,27 @@
-# README
+# faciop-api
+- 2020年度COJTで作成しているソフトのバックエンドAPI.
+- Nuxt(typescript)で実装中…
+- フロントエンド
+  - https://github.com/faciop-cojt/faciop-client
+- 3Dモデルの試着部分の実装
+  - https://github.com/faciop-cojt/faciop-face-detection-sandbox
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 初めにやって
 
-Things you may want to cover:
+```bash
+# 依存パッケージgem入れる
+$ bundle install
 
-* Ruby version
+# データベースセットアップ
+$ rails db:migrate
+$ rails db:seeds
 
-* System dependencies
+# localhost:3000にサーバ立てる
+$ rails s -p 3000
+```
 
-* Configuration
+## 図
 
-* Database creation
+- できれば、いいなあ
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+![er](https://raw.githubusercontent.com/faciop-cojt/faciop-api/master/er.png)
