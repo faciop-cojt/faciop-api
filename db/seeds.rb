@@ -5,7 +5,7 @@
   description: Faker::Lorem.sentences,
   data: ["hello.com/1", ""][rand(2)],
   price: [*10..1000].sample(1)[0],
-  category: Faker::Cosmere.shard,
+  category: ["メガネ", "帽子", "マスク"].sample(1)[0],
   link: Faker::Internet.domain_name,
   thumbnail: Faker::Omniauth.google[:info][:image]
   })

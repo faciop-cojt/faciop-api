@@ -25,7 +25,7 @@ module Api
         @model = Model.where(goodid: params[:id])
         render json: {
           status: 'SUCCESS', message: 'Loaded Good',
-          data: @model.to_a.inspect
+          data: @model.to_a.map(&:class).to_s
         },
         status: :ok
       end
