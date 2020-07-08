@@ -9,8 +9,6 @@ class CreateGoods < ActiveRecord::Migration[6.0]
       t.string :category
       t.string :link
       t.string :thumbnail
-      t.datetime :date
-
       t.timestamps
     end
   end

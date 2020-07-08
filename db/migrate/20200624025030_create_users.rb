@@ -5,7 +5,6 @@ class CreateUsers < ActiveRecord::Migration[6.0]
       t.string :screenname
       t.string :password
       t.string :token
-
       t.timestamps
     end
     add_index :users, :token, unique: true

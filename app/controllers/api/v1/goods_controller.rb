@@ -13,7 +13,7 @@ module Api
       def create
         good = Good.new(good_params)
         if good.save
-          render json: {status: 'SUCCESS', message: 'Saveed Good', data: good}, status: :ok
+          render json: {status: 'SUCCESS', message: 'Saved Good', data: good}, status: :ok
         else
           render json: {status: 'ERROR', message: 'Failed to save Good', data: good.errors}, status: :unprocessable_entity
         end

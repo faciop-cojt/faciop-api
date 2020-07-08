@@ -3,7 +3,7 @@
   name: Faker::Book.title,
   shopid: rand(5),
   description: Faker::Lorem.sentences,
-  data: "hello.com/1",
+  data: ["hello.com/1", ""][rand(2)],
   price: [*10..1000].sample(1)[0],
   category: Faker::Cosmere.shard,
   link: Faker::Internet.domain_name,
