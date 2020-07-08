@@ -11,7 +11,7 @@ module Api
             data: {
               id: @model.id,
               goodid: @model.goodid,
-              data:  @model.data.url,
+              data:  @model.data.url
             }
           },
           status: :ok
@@ -25,19 +25,22 @@ module Api
 
       def show
         @model = Model.where(goodid: params[:id])
-        if @model.size > 0 
+        if @model.size > 0
+          arr = @model.map{
+            {
+              id: _1.id,
+              goodid: _1.goodid,
+              data: _1.data.url
+            }
+          }
           render json: {
             status: 'SUCCESS', message: 'Loaded Good',
-            data: {
-              id: @model[0].id,
-              goodid: @model[0].goodid,
-              data: @model[0].data.url
-            }
+            data: arr
           },
           status: :ok
         else
           render json: {
-            status: 'FAILED', message: 'Loaded Poor',
+            status: 'FAILED', message: 'Not Found',
           },
           status: 404
         end
