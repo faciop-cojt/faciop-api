@@ -27,9 +27,9 @@ ActiveRecord::Schema.define(version: 2020_07_08_015522) do
 
   create_table "models", force: :cascade do |t|
     t.integer "goodid"
+    t.string "data"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.string "data"
   end
 
   create_table "users", force: :cascade do |t|
