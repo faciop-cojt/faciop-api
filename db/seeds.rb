@@ -6,7 +6,7 @@ Good.create({
   price: '12000',
   category: 'メガネ',
   link: 'https://www.amazon.co.jp/',
-  thumbnail: 'https://3.bp.blogspot.com/-330gH9GDMVY/V5jKcQxFYTI/AAAAAAAA81M/z31aAMRMWP0PO1xtX72JHIF6G7ZoFm2CQCLcB/s800/megane_wellington_man.png'
+  thumbnail: 'https://raw.githubusercontent.com/faciop-cojt/faciop-api/master/img/glasses_render.png?token=AKBTOEGKFWSMA5ZM6SWKDO27C7BGY'
 })
 Good.create({
   name: 'Cool hat',
