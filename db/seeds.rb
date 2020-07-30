@@ -2,14 +2,14 @@ def rand_3
   rand(1..3).to_s
 end
 Good.create({
-  name: 'Funny glasses',
+  name: 'Formal glasses',
   shopid: rand_3,
-  description: 'イかした眼鏡',
+  description: 'イかした黒縁の眼鏡',
   data: '',
   price: '12000',
   category: 'メガネ',
   link: 'https://www.amazon.co.jp/',
-  thumbnail: 'https://raw.githubusercontent.com/faciop-cojt/faciop-api/master/img/glasses_render.png?token=AKBTOEGKFWSMA5ZM6SWKDO27C7BGY'
+  thumbnail: 'https://raw.githubusercontent.com/faciop-cojt/faciop-api/master/img/glasses_formal.png'
 })
 Good.create({
   name: 'Cool hat',
@@ -42,24 +42,24 @@ Good.create({
   thumbnail: 'https://2.bp.blogspot.com/-lJilMIL82DA/UZ2VGO8EaSI/AAAAAAAATuY/V6CdH2oYAWI/s800/megane_black.png'
 })
 Good.create({
-  name: 'Pretty glasses',
+  name: 'Pink glasses',
   shopid: rand_3,
   description: 'カワイイ眼鏡❤',
   data: '',
   price: '18000',
   category: 'メガネ',
   link: 'https://www.amazon.co.jp/',
-  thumbnail: 'https://3.bp.blogspot.com/-abTzP7jhCXU/UZ2VHKTWgNI/AAAAAAAATvA/d28XnTwSVJY/s800/megane_pink.png'
+  thumbnail: 'https://raw.githubusercontent.com/faciop-cojt/faciop-api/master/img/glasses_formal_pink_rendering.png'
 })
 Good.create({
-  name: 'Monstrous glasses',
+  name: 'Octpus HMD',
   shopid: rand_3,
-  description: '邪悪な眼鏡',
+  description: '最新のVR/AR対応ヘッドマウントディスプレイ！',
   data: '',
-  price: '12000000',
+  price: '50000',
   category: 'メガネ',
   link: 'https://www.amazon.co.jp/',
-  thumbnail: 'https://1.bp.blogspot.com/-39LCjzW8pDA/XvcI4mEApbI/AAAAAAABZto/IOwANO0mePEoUeH6IeyOohg7gs7q2YPogCNcBGAsYHQ/s1600/megane_hikaru_man.png'
+  thumbnail: 'https://raw.githubusercontent.com/faciop-cojt/faciop-api/master/img/glasses_hmd_rendering.png'
 })
 
 ['田中小物', 'Cosmetic Tanaka', '加藤物流'].each { |i|
