@@ -7,8 +7,9 @@ module Api
         render json: {status: 'SUCCESS', message: 'Loaded Goods', data: goods}, status: :ok
       end
       def show
-        good =  Good.find(params[:id])
-        render json: {status: 'SUCCESS', message: 'Loaded Good: ' + params[:id], data: good}, status: :ok
+        good = Good.find(params[:id])
+        shop = Shop.find(good.shopid)
+        render json: {status: 'SUCCESS', message: 'Loaded Good: ' + params[:id], data: good, shopdata: shop}, status: :ok
       end
       # def create
       #   good = Good.new(good_params)
