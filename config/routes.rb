@@ -5,6 +5,7 @@ Rails.application.routes.draw do
     namespace 'v1' do
       resources :goods
       resources :model, only: [:show, :create]
+      resources :shops
     end
   end
 end
