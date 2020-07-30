@@ -2,24 +2,14 @@ def rand_3
   rand(1..3).to_s
 end
 Good.create({
-  name: 'Formal glasses',
+  name: 'Octpus HMD',
   shopid: rand_3,
-  description: 'イかした黒縁の眼鏡',
+  description: '最新のVR/AR対応ヘッドマウントディスプレイ！',
   data: '',
-  price: '12000',
+  price: '50000',
   category: 'メガネ',
   link: 'https://www.amazon.co.jp/',
-  thumbnail: 'https://raw.githubusercontent.com/faciop-cojt/faciop-api/master/img/glasses_formal.png'
-})
-Good.create({
-  name: 'Cool hat',
-  shopid: rand_3,
-  description: 'クールな帽子',
-  data: '',
-  price: '3200',
-  category: '帽子',
-  link: 'https://www.amazon.co.jp/',
-  thumbnail: 'https://1.bp.blogspot.com/-kpsPxxojlAo/UdEea15-maI/AAAAAAAAVvA/eg5vYG6Tvno/s601/fashion_mugiwaraboushi.png'
+  thumbnail: 'https://raw.githubusercontent.com/faciop-cojt/faciop-api/master/img/glasses_hmd_rendering.png'
 })
 Good.create({
   name: '不織布マスク',
@@ -30,6 +20,16 @@ Good.create({
   category: 'マスク',
   link: 'https://www.amazon.co.jp/',
   thumbnail: 'https://1.bp.blogspot.com/-tEEP6DMBBm4/Xtt6eQsD1JI/AAAAAAABZQQ/-bIHUTVF7gU9g8zGtfZfIzWkPuh5kKc1ACNcBGAsYHQ/s1600/medical_mask_front_view.png'
+})
+Good.create({
+  name: 'Cool hat',
+  shopid: rand_3,
+  description: 'クールな帽子',
+  data: '',
+  price: '3200',
+  category: '帽子',
+  link: 'https://www.amazon.co.jp/',
+  thumbnail: 'https://1.bp.blogspot.com/-kpsPxxojlAo/UdEea15-maI/AAAAAAAAVvA/eg5vYG6Tvno/s601/fashion_mugiwaraboushi.png'
 })
 Good.create({
   name: 'Plain glasses',
@@ -52,14 +52,14 @@ Good.create({
   thumbnail: 'https://raw.githubusercontent.com/faciop-cojt/faciop-api/master/img/glasses_formal_pink_rendering.png'
 })
 Good.create({
-  name: 'Octpus HMD',
+  name: 'Formal glasses',
   shopid: rand_3,
-  description: '最新のVR/AR対応ヘッドマウントディスプレイ！',
+  description: 'イかした黒縁の眼鏡',
   data: '',
-  price: '50000',
+  price: '12000',
   category: 'メガネ',
   link: 'https://www.amazon.co.jp/',
-  thumbnail: 'https://raw.githubusercontent.com/faciop-cojt/faciop-api/master/img/glasses_hmd_rendering.png'
+  thumbnail: 'https://raw.githubusercontent.com/faciop-cojt/faciop-api/master/img/glasses_formal.png'
 })
 
 ['田中小物', 'Cosmetic Tanaka', '加藤物流'].each { |i|
