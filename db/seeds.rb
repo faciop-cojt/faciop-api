@@ -1,7 +1,9 @@
-i = 0
+def rand_3
+  rand(1..3).to_s
+end
 Good.create({
   name: 'Funny glasses',
-  shopid: (i+=1).to_s,
+  shopid: rand_3,
   description: 'イかした眼鏡',
   data: '',
   price: '12000',
@@ -11,7 +13,7 @@ Good.create({
 })
 Good.create({
   name: 'Cool hat',
-  shopid: (i+=1).to_s,
+  shopid: rand_3,
   description: 'クールな帽子',
   data: '',
   price: '3200',
@@ -21,7 +23,7 @@ Good.create({
 })
 Good.create({
   name: '不織布マスク',
-  shopid: (i+=1).to_s,
+  shopid: rand_3,
   description: '薄いマスク',
   data: '',
   price: '100',
@@ -31,7 +33,7 @@ Good.create({
 })
 Good.create({
   name: 'Plain glasses',
-  shopid: (i+=1).to_s,
+  shopid: rand_3,
   description: '普通の眼鏡',
   data: '',
   price: '9000',
@@ -41,7 +43,7 @@ Good.create({
 })
 Good.create({
   name: 'Pretty glasses',
-  shopid: (i+=1).to_s,
+  shopid: rand_3,
   description: 'カワイイ眼鏡❤',
   data: '',
   price: '18000',
@@ -49,10 +51,9 @@ Good.create({
   link: 'https://www.amazon.co.jp/',
   thumbnail: 'https://3.bp.blogspot.com/-abTzP7jhCXU/UZ2VHKTWgNI/AAAAAAAATvA/d28XnTwSVJY/s800/megane_pink.png'
 })
-
 Good.create({
   name: 'Monstrous glasses',
-  shopid: (i+=1).to_s,
+  shopid: rand_3,
   description: '邪悪な眼鏡',
   data: '',
   price: '12000000',
@@ -60,3 +61,9 @@ Good.create({
   link: 'https://www.amazon.co.jp/',
   thumbnail: 'https://1.bp.blogspot.com/-39LCjzW8pDA/XvcI4mEApbI/AAAAAAABZto/IOwANO0mePEoUeH6IeyOohg7gs7q2YPogCNcBGAsYHQ/s1600/megane_hikaru_man.png'
 })
+
+['田中小物', 'Cosmetic Tanaka', '加藤物流'].each { |i|
+Shop.create({
+  name: i
+})
+}
