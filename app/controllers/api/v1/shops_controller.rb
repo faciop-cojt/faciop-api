@@ -7,7 +7,7 @@ module Api
       end
 
       def show
-        shop =  Shop.find(params[:id])
+        shop = Shop.find(params[:id])
         render json: {status: 'SUCCESS', message: 'Loaded Shop: ' + params[:id], data: shop}, status: :ok
       end
 
