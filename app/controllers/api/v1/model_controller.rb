@@ -6,8 +6,7 @@ module Api
       def create
         @model = Model.new(model_params)
         @good = Good.find(params[:goodid])
-        # if @good.data.empty? && 
-        if @model.save
+        if @good.data.empty? && @model.save
           @good.update(data: @model.data.url)
           render json: {
             status: 'SUCCESS', message: 'Saved Good',
