@@ -9,7 +9,7 @@ Good.create({
   price: '50000',
   category: 'メガネ',
   link: 'https://www.amazon.co.jp/',
-  thumbnail: 'https://raw.githubusercontent.com/faciop-cojt/faciop-api/master/img/glasses_hmd_rendering.png'
+  thumbnail: 'https://faciop.s3.us-east-2.amazonaws.com/img/glasses_hmd_rendering.png'
 })
 Good.create({
   name: '不織布マスク',
@@ -49,7 +49,7 @@ Good.create({
   price: '18000',
   category: 'メガネ',
   link: 'https://www.amazon.co.jp/',
-  thumbnail: 'https://raw.githubusercontent.com/faciop-cojt/faciop-api/master/img/glasses_formal_pink_rendering.png'
+  thumbnail: 'https://faciop.s3.us-east-2.amazonaws.com/img/glasses_formal_pink_rendering.png'
 })
 Good.create({
   name: 'Formal glasses',
@@ -59,7 +59,7 @@ Good.create({
   price: '12000',
   category: 'メガネ',
   link: 'https://www.amazon.co.jp/',
-  thumbnail: 'https://raw.githubusercontent.com/faciop-cojt/faciop-api/master/img/glasses_formal.png'
+  thumbnail: 'https://faciop.s3.us-east-2.amazonaws.com/img/glasses_formal.png'
 })
 
 ['田中小物', 'Cosmetic Tanaka', '加藤物流'].each { |i|
